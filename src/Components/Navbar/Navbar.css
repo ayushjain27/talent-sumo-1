@@ -1,0 +1,46 @@
+.navbar-toggler {
+    border: none !important;
+    color: #fcf6f4 !important;
+    font-size: 30px !important;
+}
+
+.navbar-toggler:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+}
+
+.nav-link {
+    color: #000 !important;
+    font-weight: bold !important;
+    transition: 0.2s ease !important;
+}
+
+.active {
+    color: #fff !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    background-color: #6c757d !important;
+}
+
+@media (max-width: 991.5px) {
+    .nav-item:nth-child(1) {
+        margin-top: 0.5rem !important;
+        border-top: 1px solid #000 !important;
+    }
+
+    .nav-link {
+        width: max-content !important;
+        margin: auto !important;
+        margin-top: 1rem !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    .active {
+        color: #000 !important;
+        background: none !important;
+        border-radius: 0 !important;
+        border-bottom: 3px solid #6c757d !important;
+    }
+}
