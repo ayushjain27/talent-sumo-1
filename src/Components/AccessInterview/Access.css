@@ -27,3 +27,35 @@ select:focus {
     background-color: #ffc107 !important;
     border-color: #ffc107 !important;
 }
+
+.btnTwo {
+    background-color: #ffc107;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btnOne {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.line {
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    margin: 15px 5px;
+    background-color: #000;
+}
+
+.heading {
+    border-bottom: 5px solid #ffc107;
+    max-width: max-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}

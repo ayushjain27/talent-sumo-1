@@ -29,7 +29,7 @@ const Navbar = () => {
                                 <NavLink onClick={handleClick} activeclassname='active' className="nav-link" aria-current="page" to="/">Create Interview</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink onClick={handleClick} className="nav-link" to="/access">Access Interview</NavLink>
+                                <NavLink onClick={handleClick} className="nav-link" to="/access">Access Details</NavLink>
                             </li>
                         </ul>
                     </div>
