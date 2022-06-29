@@ -4,6 +4,7 @@ import styles from './Create.module.css';
 import { useNavigate } from 'react-router-dom';
 
 import CreateInterview from '../../assets/Create.svg';
+import Table from '../Table'
 
 const Create = () => {
 
@@ -50,9 +51,10 @@ const Create = () => {
                                 <label htmlFor="job" className="form-label fw-bold">Job Title / Role</label>
                                 <input type="text" className="form-control" placeholder='Your role' id="job" />
                             </div>
-                            <div className="mb-3">
+                            <div className="mb-3 d-flex">
                                 <label htmlFor="question" className="form-label fw-bold">Total Question</label>
                                 <input type="number" className="form-control" id="question" />
+                                <button type="button" style={{width: '30%'}} className="btn btn-dark mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
                             </div>
                             <div className="d-grid col-5 ms-auto mt-4">
                                 <button onClick={handleClick} type="submit" className="btn btn-dark">Save and Continue</button>
@@ -61,6 +63,7 @@ const Create = () => {
                     </div>
                 </div>
             </div>
+            <Table  />
         </>
     )
 }
