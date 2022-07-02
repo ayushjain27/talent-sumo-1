@@ -1,5 +1,5 @@
 import React from 'react';
-import './Access.css';
+import styles from './Access.module.css';
 import { useNavigate } from 'react-router-dom';
 
 import { FaTelegram, FaWhatsapp, FaSlack } from 'react-icons/fa';
@@ -13,24 +13,34 @@ const Access = () => {
         navigate('/');
     }
 
+    const handleSave = (e) => {
+        e.preventDefault();
+        navigate('/notification');
+    }
+
     return (
         <>
-            <div className="mt-5 gap-5 d-flex justify-content-center mx-auto">
+            <div className="step mt-5 gap-5 d-flex justify-content-center mx-auto">
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
-                        <button className='btnOne breadcrumb-item' aria-current="page">Create</button>
+                        <button className={`${styles.btnOne} breadcrumb-item`} aria-current="page">Create</button>
                     </ol>
                 </nav>
-                <span className='line'></span>
+                <span className={styles.line}></span>
                 <nav aria-label="breadcrumb">
                     <ol className="breadcrumb">
-                        <button className='btnTwo breadcrumb-item' aria-current="page">Access</button>
+                        <button className={`${styles.btnTwo} breadcrumb-item`} aria-current="page">Access</button>
+                    </ol>
+                </nav>
+                <nav aria-label="breadcrumb">
+                    <ol className="breadcrumb">
+                        <button className={`${styles.btnThree} breadcrumb-item`} aria-current="page">Notification & Message</button>
                     </ol>
                 </nav>
             </div>
 
-            <div className='container p-3 rounded-2 mt-3'>
-                <h1 className='text-center my-3 heading'>Access Details</h1>
+            <div className={`${styles.container} container p-3 rounded-2 my-3`}>
+                <h1 className={`text-center my-3 ${styles.heading}`}>Access Details</h1>
                 <form>
                     <div className="row">
                         <div className="col-md-7">
@@ -55,16 +65,6 @@ const Access = () => {
                                 <input type="number" className="form-control" id="phoneNo" />
                                 <div id="emailHelp" className="form-text text-info">We'll never share your contact detail with anyone else.</div>
                             </div>
-                            <div className="mb-3">
-                                <label htmlFor="track" className="form-label fw-bold">Track</label>
-                                <select className="form-select" id='track' aria-label="Default select example">
-                                    <option selected value="Select">Select...</option>
-                                    <option value="Learn">Learn</option>
-                                    <option value="Hire">Hire</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div className="col-md-5 mt-2">
                             <div className='mb-3'>
                                 <label htmlFor="email" className="form-label fw-bold">Collect Email</label>
                                 <div className="form-check">
@@ -72,7 +72,6 @@ const Access = () => {
                                     <label className="form-check-label" htmlFor="yes">
                                         Yes
                                     </label>
-
                                 </div>
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="CollectEmail" id="no" defaultChecked />
@@ -81,6 +80,9 @@ const Access = () => {
                                     </label>
                                 </div>
                             </div>
+                        </div>
+                        <div className="col-md-5 mt-2">
+
                             <label htmlFor="channel" className="form-label fw-bold">Channel</label>
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" value="" id="telegram" />
@@ -169,7 +171,7 @@ const Access = () => {
                     <hr />
                     <div className="d-flex justify-content-between mx-auto">
                         <button onClick={handleBack} type="submit" className="btn btn-danger">Back</button>
-                        <button type="submit" className="btn btn-dark">Save and Continue</button>
+                        <button type="submit" onClick={handleSave} className="btn btn-dark">Save and Continue</button>
                     </div>
                 </form>
             </div>

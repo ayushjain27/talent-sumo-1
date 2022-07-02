@@ -8,32 +8,21 @@
         0px 0px 80px rgba(0, 0, 0, 0.07) !important;
 }
 
-input,
-textarea,
-select,
-.btn {
-    text-decoration: none !important;
-    outline: 0 !important;
-    box-shadow: none !important;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-    border-color: #ffc107 !important;
-}
-
-.form-check-input:checked {
-    background-color: #ffc107 !important;
-    border-color: #ffc107 !important;
-}
-
 .btnTwo {
     background-color: #ffc107;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     color: white;
+    z-index: 99;
+}
+
+.btnThree {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 99;
 }
 
 .btnOne {
@@ -41,11 +30,12 @@ select:focus {
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
+    z-index: 99;
 }
 
 .line {
     position: absolute;
-    width: 48px;
+    width: 300px;
     height: 2px;
     margin: 15px 5px;
     background-color: #000;

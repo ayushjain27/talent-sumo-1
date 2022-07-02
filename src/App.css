@@ -1,0 +1,25 @@
+input,
+textarea,
+select,
+.btn,
+.close {
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #ffc107 !important;
+}
+
+
+.form-check-input:checked {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.step {
+    flex-wrap: wrap;
+}

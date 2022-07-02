@@ -8,19 +8,23 @@
         0px 0px 80px rgba(0, 0, 0, 0.07) !important;
 }
 
-input,
-textarea,
-select,
-.btn {
-    text-decoration: none !important;
-    outline: 0 !important;
-    box-shadow: none !important;
+.img {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    animation: upDown 2s linear alternate-reverse infinite;
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-    border-color: #ffc107 !important;
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .btnOne {
@@ -29,6 +33,7 @@ select:focus {
     padding: 5px 10px;
     border-radius: 5px;
     color: white;
+    z-index: 99;
 }
 
 .btnTwo {
@@ -36,11 +41,20 @@ select:focus {
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
+    z-index: 99;
+}
+
+.btnThree {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 99;
 }
 
 .line {
     position: absolute;
-    width: 48px;
+    width: 300px;
     height: 2px;
     margin: 15px 5px;
     background-color: #000;
