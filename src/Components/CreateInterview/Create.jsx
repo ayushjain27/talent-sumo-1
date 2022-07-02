@@ -43,7 +43,7 @@ const Create = () => {
                     </div>
                     <div className="col-md-6">
                         <form>
-                            <h2 className='text-center my-4'>Create Interview</h2>
+                            <h2 className='text-center my-4 text-warning'>Create Interview</h2>
                             <div className="mb-3">
                                 <label htmlFor="detail" className="form-label fw-bold">Company / Institute Name</label>
                                 <input type="text" className="form-control" id="detail" placeholder='Enter name' aria-describedby="detailHelp" />

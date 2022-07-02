@@ -1,0 +1,71 @@
+body {
+    overflow-x: hidden;
+}
+
+.btnTwo {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+.btnThree {
+    background-color: #ffc107;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    z-index: 99;
+
+}
+
+.btnOne {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+.line {
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    margin: 15px 5px;
+    background-color: #000;
+}
+
+.left {
+    background-color: #ffc71f;
+}
+
+.headingNotify {
+    border-bottom: 3px solid white;
+    max-width: max-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+.right {
+    background-color: #fff3cd;
+}
+
+.headingMsg {
+    border-bottom: 3px solid #000;
+    max-width: max-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+@media (max-width: 767.5px) {
+    .right {
+        margin-top: 2rem;
+    }
+}

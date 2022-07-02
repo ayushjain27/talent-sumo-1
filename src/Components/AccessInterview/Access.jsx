@@ -40,7 +40,7 @@ const Access = () => {
             </div>
 
             <div className={`${styles.container} container p-3 rounded-2 my-3`}>
-                <h1 className={`text-center my-3 ${styles.heading}`}>Access Details</h1>
+                <h1 className={`text-center my-3 ${styles.heading} text-warning`}>Access Details</h1>
                 <form>
                     <div className="row">
                         <div className="col-md-7">
