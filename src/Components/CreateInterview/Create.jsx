@@ -34,6 +34,11 @@ const Create = () => {
                         <button className={`${styles.btnThree} breadcrumb-item`} aria-current="page">Notification & Message</button>
                     </ol>
                 </nav>
+                <nav aria-label="breadcrumb">
+                    <ol className="breadcrumb">
+                        <button className={`${styles.btnThree} breadcrumb-item`} aria-current="page">Search & Edit</button>
+                    </ol>
+                </nav>
             </div>
 
             <div className={`${styles.container} container align-items-center my-3 p-4 rounded-2 bg-light`}>
