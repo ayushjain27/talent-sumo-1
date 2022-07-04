@@ -1,0 +1,42 @@
+body {
+    overflow-x: hidden;
+}
+
+.cardSection{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: 12px auto;
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.02),
+        0px 0px 5.3px rgba(0, 0, 0, 0.028),
+        0px 0px 10px rgba(0, 0, 0, 0.035),
+        0px 0px 17.9px rgba(0, 0, 0, 0.042),
+        0px 0px 33.4px rgba(0, 0, 0, 0.05),
+        0px 0px 80px rgba(0, 0, 0, 0.07) !important;
+}
+
+.name{
+    font-weight: bold;
+}
+
+.input{
+    border: 2px solid gray;
+    border-radius: 4px;
+}
+
+.or{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container{
+    box-shadow:
+        0px 0px 2.2px rgba(0, 0, 0, 0.02),
+        0px 0px 5.3px rgba(0, 0, 0, 0.028),
+        0px 0px 10px rgba(0, 0, 0, 0.035),
+        0px 0px 17.9px rgba(0, 0, 0, 0.042),
+        0px 0px 33.4px rgba(0, 0, 0, 0.05),
+        0px 0px 80px rgba(0, 0, 0, 0.07) !important;
+    height: 50vh;
+}
