@@ -18,7 +18,6 @@ function App() {
           <Route path='/notification' element={<Notification />} />
           <Route path='/search' element={<Search />} />
         </Routes>
-
       </Router>
     </>
   );

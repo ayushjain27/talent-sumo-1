@@ -5,7 +5,11 @@ body {
 .cardSection{
     display: flex;
     align-items: center;
-    width: 40%;
+    justify-content: center;
+    text-align: center;
+    max-width: 400px;
+    min-width: 100px;
+    /* height: 600px; */
     margin: 12px auto;
     box-shadow:
         0px 0px 2.2px rgba(0, 0, 0, 0.02),
@@ -20,14 +24,19 @@ body {
     font-weight: bold;
 }
 
-.input{
-    border: 2px solid gray;
-    border-radius: 4px;
+.or{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.or{
-    font-size: 1.5rem;
+
+.search{
+    border: 2px solid white;
+    padding: 6px 24px;
+    border-radius: 24px;
     font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .container{
@@ -39,4 +48,22 @@ body {
         0px 0px 33.4px rgba(0, 0, 0, 0.05),
         0px 0px 80px rgba(0, 0, 0, 0.07) !important;
     height: 50vh;
+}
+
+.heading{
+    width: 20%;
+    height: 100%;
+    border-radius: 12px;
+    margin: 2px 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content{
+    width: 20%;
+    height: 15%;
+    border-radius: 12px;
+    margin: 2px 4px;
+    text-align: center;
+    font-weight: bold;
 }
