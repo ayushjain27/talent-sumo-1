@@ -1,0 +1,10 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    margin: 4px 0px;
+    border-radius: 12px;
+}
