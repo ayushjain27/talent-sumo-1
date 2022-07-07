@@ -17,10 +17,9 @@
 }
 
 .active {
-    color: #fff !important;
+    color: #ffc107 !important;
     font-weight: bold !important;
-    border-radius: 5px !important;
-    background-color: #6c757d !important;
+    border-bottom: 3px solid #ffc107 !important;
 }
 
 @media (max-width: 991.5px) {
@@ -37,10 +36,7 @@
         justify-content: center !important;
     }
 
-    .active {
-        color: #000 !important;
-        background: none !important;
-        border-radius: 0 !important;
-        border-bottom: 3px solid #6c757d !important;
+    .search {
+        display: block !important;
     }
 }

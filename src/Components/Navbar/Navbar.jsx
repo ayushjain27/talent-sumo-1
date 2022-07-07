@@ -24,7 +24,7 @@ const Navbar = () => {
                         }
                     </button>
                     <div className={`${toggle ? "" : "collapse"} navbar-collapse`} id="navbarSupportedContent">
-                        <ul className="navbar-nav mx-5 gap-2 ms-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav mx-5 gap-2 mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                                 <NavLink onClick={handleClick} activeclassname='active' className="nav-link" aria-current="page" to="/">Create Interview</NavLink>
                             </li>
@@ -34,10 +34,8 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <NavLink onClick={handleClick} className="nav-link" to="/notification">Notification & Message</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink onClick={handleClick} className="nav-link active" to="/search"><i className="fa fa-search" aria-hidden="true"></i> Search & Edit</NavLink>
-                            </li>
                         </ul>
+                        <NavLink onClick={handleClick} className="btn btn-warning search" to="/search"><i className="fa fa-search text-dark" aria-hidden="true"></i></NavLink>
                     </div>
                 </div>
             </nav>

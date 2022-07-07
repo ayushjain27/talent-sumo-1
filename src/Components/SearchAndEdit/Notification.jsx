@@ -4,7 +4,7 @@ import styles from './Notification.module.css'
 const notification = () => {
   return (
     <>
-     <div
+      <div
         className="modal fade"
         id="exampleModal2"
         tabindex="-1"
@@ -23,63 +23,63 @@ const notification = () => {
                 <div className="row">
                   <div className="col-6">
                     <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col3} col-12`}>Inerview Notifications</div>
+                      <div className={`${styles.col3} col-12`}>Inerview Notifications</div>
                     </div>
                   </div>
                   <div className="col-6">
-                  <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col3} col-12`}>Bot Messages</div>
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col3} col-12`}>Bot Messages</div>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-6">
                     <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col1} col-6`}>Report sent to email-1</div>
-                        <div className={`${styles.col2} col-6`}></div>
+                      <div className={`${styles.col1} col-6`}>Report sent to email-1</div>
+                      <div className={`${styles.col2} col-6`}></div>
                     </div>
                   </div>
                   <div className="col-6">
-                  <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col1} col-6`}>Interaction Welcome Message</div>
-                        <div className={`${styles.col2} col-6`}></div>
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Interaction Welcome Message</div>
+                      <div className={`${styles.col2} col-6`}></div>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-6">
                     <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col1} col-6`}>Report sent to email-2</div>
-                        <div className={`${styles.col2} col-6`}></div>
+                      <div className={`${styles.col1} col-6`}>Report sent to email-2</div>
+                      <div className={`${styles.col2} col-6`}></div>
                     </div>
                   </div>
                   <div className="col-6">
-                  <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col1} col-6`}>Interaction Instruction Message</div>
-                        <div className={`${styles.col2} col-6`}></div>
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Interaction Instruction Message</div>
+                      <div className={`${styles.col2} col-6`}></div>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-6">
-                  <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col1} col-6`}>Report sent to user</div>
-                        <div className={`${styles.col2} col-6`}>No</div>
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Report sent to user</div>
+                      <div className={`${styles.col2} col-6`}>No</div>
                     </div>
                   </div>
                   <div className="col-6">
-                  <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col1} col-6`}>Interaction Completion Message</div>
-                        <div className={`${styles.col2} col-6`}></div>
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Interaction Completion Message</div>
+                      <div className={`${styles.col2} col-6`}></div>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col-6"></div>
                   <div className="col-6">
-                  <div className={`${styles.row1} row`}>
-                        <div className={`${styles.col1} col-6`}>Bot Warning Message</div>
-                        <div className={`${styles.col2} col-6`}></div>
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Bot Warning Message</div>
+                      <div className={`${styles.col2} col-6`}></div>
                     </div>
                   </div>
                 </div>

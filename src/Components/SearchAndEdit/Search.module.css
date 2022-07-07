@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-.cardSection{
+.cardSection {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,17 +20,17 @@ body {
         0px 0px 80px rgba(0, 0, 0, 0.07) !important;
 }
 
-.name{
+.name {
     font-weight: bold;
 }
 
-.or{
+.or {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 
-.search{
+.search {
     border: 2px solid white;
     padding: 6px 24px;
     border-radius: 24px;
@@ -39,7 +39,7 @@ body {
     cursor: pointer;
 }
 
-.container{
+.container {
     box-shadow:
         0px 0px 2.2px rgba(0, 0, 0, 0.02),
         0px 0px 5.3px rgba(0, 0, 0, 0.028),
@@ -50,7 +50,7 @@ body {
     height: 25vh;
 }
 
-.heading{
+.heading {
     width: 20%;
     height: 100%;
     border-radius: 12px;
@@ -59,7 +59,7 @@ body {
     font-weight: bold;
 }
 
-.content{
+.content {
     width: 20%;
     height: 15%;
     border-radius: 12px;
