@@ -52,8 +52,11 @@ const Create = () => {
                                 <label htmlFor="track" className="form-label fw-bold">Track</label>
                                 <select className="form-select" id='track' aria-label="Default select example">
                                     <option selected value="Select">Select...</option>
-                                    <option value="Learn">Learn</option>
+                                    <option value="Learn Sales">Learn Sales</option>
+                                    <option value="Learn HR">Learn HR</option>
                                     <option value="Hire">Hire</option>
+                                    <option value="Hire Sales">Hire Sales</option>
+                                    <option value="Hire HR">Hire HR</option>
                                 </select>
                             </div>
                             <div className="mb-3">
@@ -67,6 +70,10 @@ const Create = () => {
                                     <option value="Audio">Audio</option>
                                     <option value="Video">Video</option>
                                 </select>
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="description" className="form-label fw-bold">Description</label>
+                                <input type="text" className="form-control" placeholder='Your description' id="description" />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="job" className="form-label fw-bold">Job Title / Role</label>
