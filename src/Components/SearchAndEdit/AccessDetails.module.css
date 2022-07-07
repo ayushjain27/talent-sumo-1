@@ -1,0 +1,36 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row1{
+    padding: 2px 5px;
+}
+
+.col1{
+    background-color: #ebebeb;
+    border-radius: 6px;
+    padding: 6px;
+    height: 60px;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-left: -2px;
+    line-height: 15px;
+}
+
+.col2{
+    border: 1px solid black;
+    height: 60px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
