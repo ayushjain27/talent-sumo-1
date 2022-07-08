@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './QuesAns.module.css'
+import styles from './Notification.module.css'
 
 const quesans = () => {
   return (
     <>
-     <div
+      <div
         className="modal fade"
         id="exampleModal"
         tabindex="-1"
@@ -13,28 +13,65 @@ const quesans = () => {
       >
         <div className="modal-dialog">
           <div className="modal-content">
-          <div className={`${styles.title} modal-header`}>
+            <div className={`${styles.title} modal-header`}>
               <h5 className="modal-title" id="exampleModalLabel">
                 QUESTIONS
               </h5>
             </div>
             <div className="modal-body">
-            <div class={`${styles.row} row g-3 align-items-center`}>
-  <div class="col-3">
-    <label for="question" class="col-form-label">Question 1: </label>
-  </div>
-  <div class="col-9">
-    <input type="text" id="question" class="form-control" aria-describedby="passwordHelpInline" />
-  </div>
-</div>
-            <div class={`${styles.row} row g-3 align-items-center`}>
-  <div class="col-3">
-    <label for="answer" class="col-form-label">Answer : </label>
-  </div>
-  <div class="col-9">
-    <input type="text" id="answer" class="form-control" aria-describedby="passwordHelpInline" />
-  </div>
-</div>
+              <div className="container">
+                <div className="row">
+                  <div className="col-6">
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Company / Institute Name</div>
+                      <div className={`${styles.col2} col-6`}></div>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Track</div>
+                      <div className={`${styles.col2} col-6`}></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-6">
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Test Code</div>
+                      <div className={`${styles.col2} col-6`}></div>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Interview Mode</div>
+                      <div className={`${styles.col2} col-6`}></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-6">
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Description</div>
+                      <div className={`${styles.col2} col-6`}></div>
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Job Title / Role</div>
+                      <div className={`${styles.col2} col-6`}></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-6"></div>
+                  <div className="col-6">
+                    <div className={`${styles.row1} row`}>
+                      <div className={`${styles.col1} col-6`}>Total Questions</div>
+                      <div className={`${styles.col2} col-6`}></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="modal-footer">
               <button
