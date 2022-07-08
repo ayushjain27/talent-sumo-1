@@ -39,32 +39,16 @@ const Access = () => {
                 </nav>
             </div>
 
-            <div className={`${styles.container} container p-3 rounded-2 my-3`}>
-                <h1 className={`text-center my-3 ${styles.heading} text-warning`}>Access Details</h1>
+            <div className='container p-3 rounded-2 my-3 bg-light'>
+                <h1 className={`text-center mb-4 ${styles.heading} text-warning`}>Access Details</h1>
                 <form>
                     <div className="row">
-                        <div className="col-md-7">
+                        <div className="col-md-3">
                             <div className="mb-3">
                                 <label htmlFor="accessCode" className="form-label fw-bold">Access Code</label>
                                 <input type="number" className="form-control" placeholder='Enter access code' id="accessCode" aria-describedby="accessHelp" />
                             </div>
-                            <div className="mb-3">
-                                <label htmlFor="whoInitiate" className="form-label fw-bold">Who can Initiate ?</label>
-                                <select className="form-select" id='whoInitiate' aria-label="Default select example">
-                                    <option selected value="Select">Select...</option>
-                                    <option value="Bot">Bot</option>
-                                    <option value="User">User</option>
-                                </select>
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="expiryDate" className="form-label fw-bold">Expiry Date</label>
-                                <input type="date" className="form-control" id="expiryDate" />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="phoneNo" className="form-label  fw-bold">Phone Number</label>
-                                <input type="number" className="form-control" id="phoneNo" />
-                                <div id="emailHelp" className="form-text text-info">We'll never share your contact detail with anyone else.</div>
-                            </div>
+
                             <div className='mb-3'>
                                 <label htmlFor="email" className="form-label fw-bold">Collect Email</label>
                                 <div className="form-check">
@@ -80,8 +64,32 @@ const Access = () => {
                                     </label>
                                 </div>
                             </div>
+                            <div className='mb-3'>
+                                <label htmlFor="collectResume" className="form-label fw-bold">Collect Resume</label>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="CollectResume" id="yesResume" />
+                                    <label className="form-check-label" htmlFor="yesResume">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="CollectResume" id="noResume" defaultChecked />
+                                    <label className="form-check-label" htmlFor="noResume">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-md-5 mt-2">
+
+                        <div className="col-md-3">
+                            <div className="mb-3">
+                                <label htmlFor="whoInitiate" className="form-label fw-bold">Who can Initiate ?</label>
+                                <select className="form-select" id='whoInitiate' aria-label="Default select example">
+                                    <option selected value="Select">Select...</option>
+                                    <option value="Bot">Bot</option>
+                                    <option value="User">User</option>
+                                </select>
+                            </div>
 
                             <label htmlFor="channel" className="form-label fw-bold">Channel</label>
                             <div className="form-check">
@@ -104,22 +112,6 @@ const Access = () => {
                             </div>
 
                             <div className='mb-3'>
-                                <label htmlFor="candidateID" className="form-label fw-bold">Collect Candidate ID</label>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="CollectID" id="yesId" />
-                                    <label className="form-check-label" htmlFor="yesId">
-                                        Yes
-                                    </label>
-                                </div>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="CollectID" id="noId" defaultChecked />
-                                    <label className="form-check-label" htmlFor="noId">
-                                        No
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div className='mb-3'>
                                 <label htmlFor="feedbackMessage" className="form-label fw-bold">Candidate Feedback Message</label>
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="CandidateFeedback" id="yesFeedbackMessage" />
@@ -134,7 +126,35 @@ const Access = () => {
                                     </label>
                                 </div>
                             </div>
+                        </div>
 
+                        <div className="col-md-3">
+                            <div className="mb-3">
+                                <label htmlFor="expiryDate" className="form-label fw-bold">Expiry Date</label>
+                                <input type="date" className="form-control" id="expiryDate" />
+                            </div>
+                            <div className='mb-3'>
+                                <label htmlFor="candidateID" className="form-label fw-bold">Collect Candidate ID</label>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="CollectID" id="yesId" />
+                                    <label className="form-check-label" htmlFor="yesId">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="CollectID" id="noId" defaultChecked />
+                                    <label className="form-check-label" htmlFor="noId">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-3">
+                            <div className="mb-3">
+                                <label htmlFor="phoneNo" className="form-label  fw-bold">Phone Number</label>
+                                <input type="number" className="form-control" id="phoneNo" />
+                            </div>
                             <div className='mb-3'>
                                 <label htmlFor="voiceMatch" className="form-label fw-bold">Voice Match</label>
                                 <div className="form-check">
@@ -146,22 +166,6 @@ const Access = () => {
                                 <div className="form-check">
                                     <input className="form-check-input" type="radio" name="VoiceMatch" id="noMatch" defaultChecked />
                                     <label className="form-check-label" htmlFor="noMatch">
-                                        No
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div className='mb-3'>
-                                <label htmlFor="collectResume" className="form-label fw-bold">Collect Resume</label>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="CollectResume" id="yesResume" />
-                                    <label className="form-check-label" htmlFor="yesResume">
-                                        Yes
-                                    </label>
-                                </div>
-                                <div className="form-check">
-                                    <input className="form-check-input" type="radio" name="CollectResume" id="noResume" defaultChecked />
-                                    <label className="form-check-label" htmlFor="noResume">
                                         No
                                     </label>
                                 </div>
