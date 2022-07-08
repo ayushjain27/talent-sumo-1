@@ -36,7 +36,7 @@ const Create = () => {
                 </nav>
             </div>
 
-            <div className={`${styles.container} container align-items-center my-3 p-4 rounded-2 bg-light`}>
+            <div className='container align-items-center my-3 p-4 rounded-2 bg-light'>
                 <div className="row">
                     <div className="col-md-6">
                         <img className={`${styles.img} img-fluid`} src={CreateInterview} alt="create" />

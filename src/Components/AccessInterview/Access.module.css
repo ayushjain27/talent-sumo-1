@@ -1,11 +1,9 @@
-.container {
-    box-shadow:
-        0px 0px 2.2px rgba(0, 0, 0, 0.02),
-        0px 0px 5.3px rgba(0, 0, 0, 0.028),
-        0px 0px 10px rgba(0, 0, 0, 0.035),
-        0px 0px 17.9px rgba(0, 0, 0, 0.042),
-        0px 0px 33.4px rgba(0, 0, 0, 0.05),
-        0px 0px 80px rgba(0, 0, 0, 0.07) !important;
+.btnOne {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 99;
 }
 
 .btnTwo {
@@ -25,14 +23,6 @@
     z-index: 99;
 }
 
-.btnOne {
-    background-color: #f5f5f5;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    z-index: 99;
-}
-
 .line {
     position: absolute;
     width: 300px;
@@ -42,7 +32,7 @@
 }
 
 .heading {
-    border-bottom: 5px solid #ffc107;
+    border-bottom: 2px solid #ffc107;
     max-width: max-content;
     text-align: center;
     display: flex;

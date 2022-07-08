@@ -62,7 +62,7 @@ const Table = () => {
                         <div className="modal-footer">
                             <div>
                                 <button type="button" className="btn btn-secondary mx-1" data-bs-dismiss="modal">Close</button>
-                                <button type="button" className="btn btn-primary mx-1">Save changes</button>
+                                <button type="button" className="btn btn-warning mx-1">Save changes</button>
                             </div>
                         </div>
                     </div>
