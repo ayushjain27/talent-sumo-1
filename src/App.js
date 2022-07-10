@@ -6,12 +6,14 @@ import Create from './Components/CreateInterview/Create';
 import Access from './Components/AccessInterview/Access';
 import Notification from './Components/InterviewNotification/Notification';
 import Search from './Components/SearchAndEdit/Search'
+import Report from './Components/Report/Report'
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <Report />
         <Routes>
           <Route path='/' element={<Create />} />
           <Route path='/access' element={<Access />} />
