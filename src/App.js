@@ -7,6 +7,7 @@ import Access from './Components/AccessInterview/Access';
 import Notification from './Components/InterviewNotification/Notification';
 import Search from './Components/SearchAndEdit/Search'
 import Report from './Components/Report/Report'
+import Report1 from './Components/Report1/Report1'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Report />
+        <Report1 />
         <Routes>
           <Route path='/' element={<Create />} />
           <Route path='/access' element={<Access />} />

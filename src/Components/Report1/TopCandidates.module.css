@@ -1,0 +1,57 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 4px;
+    padding: 12px;
+    color: #ffc107;
+}
+
+.subheading{
+    margin: 18px 24px;
+    color: goldenrod;
+}
+
+.subheading1{
+    margin: 18px 24px;
+    border-bottom: 2px solid #ffc107;
+    max-width: max-content;
+    color: goldenrod;
+}
+
+.col{
+    padding: 8px;
+}
+
+.para{
+    background-color: lightgray;
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 24px;
+    text-align: start;
+}
+
+.para1{
+    width: 100%;
+    padding: 12px 24px;
+    text-align: start;
+}
+
+.para2{
+    margin: 20px 0px;
+    text-align: start;
+}
+
+.para3{
+    width: 100%;
+    padding: 0px 24px;
+    text-align: start;
+}
+
+.cohort{
+    text-align: start;
+}
+
+.points{
+    font-weight: 700;
+}
