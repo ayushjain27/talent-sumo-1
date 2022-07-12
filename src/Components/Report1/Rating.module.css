@@ -1,0 +1,25 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 4px;
+    padding: 12px;
+    color: #ffc107;
+}
+
+.points{
+    font-weight: 700;
+}
+
+.para{
+    width: 100%;
+    padding: 12px 24px;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+.para1{
+    width: 100%;
+    padding: 12px 24px;
+}
+
